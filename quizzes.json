@@ -1,0 +1,63 @@
+{
+    "quizzes": [
+      {
+        "id": "quizId",
+        "title": "Quiz Title",
+        "description": "Brief description of the quiz",
+        "questions": [
+          {
+            "questionId": "uniqueQuestionId",
+            "type": "multiple_choice",
+            "content": "What is the capital of France?",
+            "options": [
+              "Paris",
+              "Rome",
+              "Berlin",
+              "Madrid"
+            ],
+            "correctAnswer": "Paris",
+            "feedback": "Paris is the capital of France."
+          },
+          {
+            "questionId": "uniqueQuestionId2",
+            "type": "true_false",
+            "content": "The earth is flat.",
+            "correctAnswer": false,
+            "feedback": "The earth is not flat."
+          }
+        ],
+        "createdBy": "adminUserId",
+        "createdAt": "2024-07-31T10:00:00Z",
+        "updatedAt": "2024-07-31T10:00:00Z"
+      }
+    ],
+    "results": [
+      {
+        "userId": "uniqueUserId",
+        "quizId": "quizId",
+        "score": 85,
+        "answers": [
+          {
+            "questionId": "uniqueQuestionId",
+            "selectedOption": "Paris",
+            "isCorrect": true
+          },
+          {
+            "questionId": "uniqueQuestionId2",
+            "selectedOption": false,
+            "isCorrect": true
+          }
+        ],
+        "completedAt": "2024-07-31T10:15:00Z"
+      }
+    ],
+    "rankings": [
+      {
+        "quizId": "quizId",
+        "userId": "uniqueUserId",
+        "score": 85,
+        "rank": 1
+      }
+    ]
+  }
+  
