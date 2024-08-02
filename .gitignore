@@ -128,3 +128,22 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+# gitignore backend
+
+# Node modules
+backend/node_modules/
+
+# Diretório de saída da compilação TypeScript
+backend/dist/
+
+# Arquivos de ambiente
+backend/.env
+
+# Logs
+backend/*.log
+backend/logs/
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
