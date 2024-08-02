@@ -1,0 +1,25 @@
+{
+    "entryFile": "src/app.ts",
+    "noImplicitAdditionalProperties": "throw-on-extras",
+    "controllerPathGlobs": ["src/controllers/*.ts"],
+    "spec": {
+      "outputDirectory": "dist",
+      "specVersion": 3,
+      "basePath": "/api",
+      "specFileBaseName": "swagger",
+      "host": "localhost:3000",
+      "securityDefinitions": {
+        "Bearer": {
+          "type": "apiKey",
+          "name": "Authorization",
+          "in": "header"
+        }
+      }
+    },
+    "routes": {
+      "routesDir": "src/routes",
+      "authenticationModule": "src/middlewares/authMiddleware.ts",
+      "basePath": "/api"
+    }
+  }
+  

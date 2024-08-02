@@ -1,12 +1,28 @@
 {
-  "name": "backend",
+  "name": "quiz-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Backend for a corporate quiz application using Node.js, TypeScript, TSOA, MongoDB, and Redis.",
+  "main": "dist/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "tsoa": "tsoa routes && tsoa swagger"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "keywords": ["quiz", "quizzes"],
+  "author": "Wendel Silv@",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^5.0.0",
+    "redis": "^4.6.5",
+    "tsoa": "^3.13.0",
+    "typescript": "^4.8.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.7.14",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4"
+  }
 }
